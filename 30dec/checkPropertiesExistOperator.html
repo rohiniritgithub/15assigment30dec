@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+			function mobile(model_no)
+		{
+			this.model=model_no;
+			this.memory=4;
+			//this.colour=black;
+
+		}
+		var samsung=new mobile('galaxy');
+		var nokia=new mobile('3310');
+		
+		if('ram' in nokia)
+		{
+			document.write("available"+  " "  +samsung.model);
+
+		}
+		else
+		{
+			document.write("doesnt exist");
+		}
+
+	</script>
+
+</body>
+</html>

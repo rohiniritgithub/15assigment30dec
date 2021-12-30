@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function mobile(model_no)
+		{
+			this.model=model_no;
+			this.color='white';
+			this.ram='4GB';
+
+			this.price=function()
+			{
+				document.write(this.model + "price is rs.3000 <br>");
+			};
+
+		}
+
+		var samsung=new mobile('galaxy');
+		var nokia=new mobile('3310');
+/*
+		//method wont dislpay
+         for (var k in nokia)
+         {
+         	if(typeof nokia[k]!=='function')
+         	{
+         		document.write(nokia[k] + "<br>");
+         	}
+         }
+
+*/
+
+
+        //value whith key method wont display
+
+        for(var key in nokia)
+        {
+        	if(typeof nokia[key] !=='function')
+        	{
+        		document.write(key +" : " +nokia[key] +"<br>")
+        	}
+        }
+	</script>
+
+</body>
+</html>

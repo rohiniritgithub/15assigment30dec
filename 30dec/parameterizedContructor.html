@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		class mobile
+		{
+			constructor(model_no,color)
+			{
+				this.model=model_no;
+				this.clr=color;
+			}
+
+			show()
+			{
+				return this.model +"price rs. 3000" +this.car;
+			}
+		}
+
+		var nokia=new mobile('galaxy' ,'white');
+		var lg=new mobile('Note4','black');
+		document.write(nokia.show() +"<br>");
+		document.write(lg.show());
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		class mobile
+		{
+			constructor()
+			{
+				this.a =21;
+				this.show=function()
+				{
+					return "instance method";
+				};
+			}
+
+			display()
+			{
+				return "prototype member";
+			}
+		}
+
+		var nokia=new mobile();
+		document.write(nokia.display());
+	</script>
+
+</body>
+</html>

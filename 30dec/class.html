@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*
+		var mobile=function()
+		{
+			this .model='galaxy';
+			this.foo= function()
+			{
+				return "class using constructor";
+			}
+		}
+
+		//prototype member
+		mobile.prototype.display=function()
+		{
+		return "prototype method";
+		}
+
+		*/
+
+
+		//class declaration
+
+		class mobile
+		{
+			constructor()
+			{
+				//instance member
+
+				this.a=12;
+				this.foo=function()
+				{
+					return "instance method";
+				};
+			}
+			//prototype member
+			display()
+			{
+				return "prototype method";
+			}
+		}
+
+			var samsung =new mobile();
+			document.write(samsung.a +"<br>");
+			document.write(samsung.dislpy());
+		
+
+	</script>
+
+</body>
+</html>

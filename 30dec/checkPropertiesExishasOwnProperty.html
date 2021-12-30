@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function mobile(model_no)
+		{
+			this.model=model_no;
+			this.color='white';
+
+		}
+
+		var samsung=new mobile('galaxy');
+		var nokia=new mobile('3310');
+
+
+		if(nokia.hasOwnProperty('ram'))
+		{
+			document.write("available");
+		}
+		else
+		{
+			document.write("doesnt exist"+"<br>");
+		}
+
+
+		if(typeof nokia.ram!=='undefined')
+
+		{
+			document.write("availble");
+		}
+		else
+		{
+			document.write("doesnt exist");
+		}
+	</script>
+
+</body>
+</html>

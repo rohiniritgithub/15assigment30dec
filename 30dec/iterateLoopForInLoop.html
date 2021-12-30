@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function mobile(model_no)
+		{
+			this.model=model_no;
+			this.color='white';
+			this.ram='4GB';
+
+			this.price=function()
+			{
+				document.write(this.model+"Price rs.3000  <br>");
+			};
+
+		}
+
+
+		var samsung=new mobile('galaxy');
+		var nokia=new mobile('3310');
+
+		for(var key in nokia)
+
+		{
+			//document.write(key + "<br>");
+			document.write(nokia[key] +"<br>"); //this will print value
+		}
+
+		
+	</script>
+
+</body>
+</html>

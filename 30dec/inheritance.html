@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		class father
+		{
+			constructor()
+			{
+				this.name="sachin";
+			}
+			showFMoney()
+			{
+				return "father money <br>";
+			}
+		}
+
+		class Son extends father
+		{
+			showSMoney()
+			{
+				return "son money <br>";
+			}
+		}
+
+
+		class grandSon extends Son{
+			shoeGMoney()
+			{
+				return "grandson money";
+			}
+		}
+
+		var t = new grandSon();
+		document.write(t.showFMoney() +"<br>");
+		document.write(t.showSMoney()+"<br>");
+		document.write(t.shoeGMoney() +"<br>");
+
+
+		var f = new father();
+		document.write(f.showFMoney()+"<br>");
+		document.write(f.showSMoney() +"<br>");
+		document.write(f.name +"<br>");
+
+
+		var u=new Son();
+		document.write(u.shoeGMoney());
+		document.write(u.name +"<br>");
+
+
+
+
+
+	</script>
+
+</body>
+</html>
